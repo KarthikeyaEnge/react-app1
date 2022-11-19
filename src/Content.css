@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --lgrd2:linear-gradient(45deg,rgb(30, 73, 228),rgb(19, 48, 151),rgb(70, 158, 255),rgb(70, 156, 257));
+    --font:Manrope;
+    --fcol:whitesmoke;
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+    max-height: auto;
+}
+
+.additem{
+  margin: 2rem; 
+  width: 70vw;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font);
+  font-size: 1rem;
+}
+
+.additem input[type='text']{
+    width: 30vw;
+    height: 3rem;
+    border-radius:10px ;
+    padding: 0.5rem; 
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid rgb(19, 48, 151);
+}
+
+.picon{
+  width: 30px;
+  height: 30px;
+  background: var(--lgrd2);
+  border-radius: 500%;
+  padding: 0.2rem;
+  color: aliceblue;
+  margin-inline: 1rem;
+  border: none;
+  box-shadow: 0px 0px 4px grey;
+  cursor: pointer;
+}
+
+.picon:active{
+    background: var(--lgrd);
+}
+
+ul{
+
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: auto;
+}
+
+
+
+.item{
+  display: flex;
+  width: 2rem;
+  font-size: 1.4rem;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-family: var(--font);
+  align-items: center; 
+  background: var(--lgrd2);
+  padding: 2rem;
+  width: 60vw;
+  margin: 1rem;
+  box-shadow: 0px 0px 10px grey;
+  border-radius:10px ;
+  color:var(--fcol);
+}
+
+Footer{
+    margin-top: 1rem;
+    font-family: var(--font);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: aliceblue;
+    background: var(--lgrd);
+    padding: 1rem;
+}
+
+.empty{
+    font-family: var(--font);
+    font-size: 2rem;
+    color: crimson;
+    margin: 1rem;
+}
